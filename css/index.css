@@ -38,11 +38,6 @@ header {
     margin-bottom: 4em;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    header {
-        box-sizing: content-box;
-    }
-}
 
 .header-contenedor {
     /* eliminamos la propiedad flex que no hacia nada */
@@ -53,14 +48,6 @@ header {
     height: 6.25em;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .header-contenedor {
-        display: block;
-        position: relative;
-        top: -860px;
-        left: -210px;
-    }
-}
 
 .header-logo {
     position: absolute;
@@ -68,15 +55,6 @@ header {
     left: 3.75em;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .header-logo {
-        position: absolute;
-        top: 4.375em;
-        left: 6.75em;
-        display: flex;
-        justify-content: center;
-    }
-}
 
 .header-logo::before {
     content: "<header>";
@@ -108,39 +86,6 @@ header {
     right: -19em;
 }
 
-/*para celulares*/
-@media screen and (min-width: 0px)and (max-width:575px) {
-    .header-texto {
-        right: -4em;
-        width: 75%;
-    }
-
-}
-
-/*para tablet*/
-@media screen and (min-width: 768px) {
-    .header-texto {
-        right: -5em;
-        width: 85%;
-    }
-}
-
-/*para laptop 1280*/
-@media screen and (min-width: 1280px) {
-    .header-texto {
-        right: -11em;
-        width: 80%;
-    }
-}
-
-/*para pc 1920*/
-@media screen and (min-width: 1920px) {
-    .header-texto {
-        top: -35em;
-        right: -11em;
-        width: 80%;
-    }
-}
 
 .header-texto h1 {
     /*float: left; /*le indico al titulo que flote a la izq*/
@@ -188,97 +133,6 @@ header {
     text-transform: uppercase;
 }
 
-@media screen and (min-width: 0px) and (max-width:575px) {
-    .header-texto p {
-        font-size: 1.5em;
-        text-align: center;
-        line-height: 1.4;
-        text-shadow: 0 0 0.2em rgb(252, 252, 252), 0 0 0.2em rgb(252, 252, 252),
-            0 0 0.2em rgb(252, 252, 252)
-    }
-
-    .header-texto h1 {
-        font-size: 1.95em;
-        text-align: left;
-        font-weight: bold !important;
-        margin-top: 2em;
-        color: white;
-        text-shadow: black 0.1em 0.1em 0.2em;
-    }
-
-    .header-texto p::before,
-    .header-texto p::after,
-    .header-texto h1::before,
-    .header-texto h1::after,
-    .header-logo::before,
-    .header-logo::after {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 768px) {
-    .header-logo::after {
-        left: 24.25em;
-    }
-
-    .header-texto p::after {
-        right: 11em !important;
-        bottom: 25.5em !important;
-    }
-
-    .header-texto h1 {
-        font-size: 3.30em;
-    }
-
-    .header-texto h1::after {
-        right: 17.5em;
-        margin-top: 2.3em;
-    }
-
-}
-
-@media screen and (min-width: 1280px) {
-    .header-logo::after {
-        left: 47.6em;
-        bottom: -2em;
-    }
-
-    .header-texto p {
-        font-size: 1.75em;
-    }
-
-    .header-texto p::after {
-        right: 14.5em !important;
-        bottom: 17.8em !important;
-    }
-
-    .header-texto h1 {
-        font-size: 4em;
-    }
-
-    .header-texto h1::after {
-        right: 2.5em;
-        margin-top: 2.3em;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .header-logo::after {
-        left: 73.6em;
-    }
-
-    .header-texto p::after {
-        right: 31.2em !important;
-        /*bottom: 17.8em!important;*/
-    }
-
-    .header-texto h1::after {
-        right: 22.5em;
-        /*margin-top: 2.3em;*/
-    }
-
-}
 
 
 .header-texto p::before {
@@ -348,37 +202,6 @@ header label:hover {
     padding-top: 2.5em;
 }
 
-@media screen and (min-width: 0px) and (max-width: 575px) {
-    .menu {
-        position: relative;
-        background: none;
-        transition: none;
-        transform: none;
-        right: -12.5em;
-        top: 3.5em;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .menu {
-        width: 25%;
-        height: 30em;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .menu {
-        width: 18%;
-        height: 37em;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .menu {
-        width: 13%;
-        height: 36em;
-    }
-}
 
 .menu a {
     /*le vamos a decir que caracteristicas tienen los nombres del menu*/
@@ -395,30 +218,6 @@ header label:hover {
     margin-top: 1.5625em;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .menu a {
-        height: 1em;
-        margin-top: -0.5em;
-        font-size: 1.4em;
-        border-bottom: none;
-    }
-
-    .menu a:hover {
-        background: inherit !important;
-    }
-
-}
-
-@media screen and (min-width: 768px) {
-    .menu a {
-        height: 1em;
-        padding: 0.5em 0.5em 0.5em 1em;
-        font-size: 1.5em;
-        position: relative;
-        top: 1em;
-
-    }
-}
 
 .menu:hover {
     transform: translate3d(0, 0, 0);
@@ -444,17 +243,6 @@ header label:hover {
     margin-top: 5.75em;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .redes {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width:1279px) {
-    .redes {
-        display: none;
-    }
-}
 
 .redes a {
     display: inline !important;
@@ -484,37 +272,6 @@ header label:hover {
     justify-content: space-around;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .contenedor-info {
-        flex-direction: column;
-        width: 85%;
-        /*cambiamos por porcentaje*/
-        height: 100%;
-        margin: 0 auto;
-    }
-
-    main {
-        box-sizing: inherit !important;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .contenedor-info {
-        width: 90%;
-    }
-}
-
-@media screen and (min-width:1280px) {
-    .contenedor-info {
-        width: 95%;
-    }
-}
-
-@media screen and (min-width:1920px) {
-    .contenedor-info {
-        width: 82%;
-    }
-}
 
 .info {
     width: calc(33.3% - 1em);
@@ -522,23 +279,6 @@ header label:hover {
     margin-bottom: 3.125em;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .info {
-        width: 100%;
-        /*24.125em;*/
-    }
-}
-
-@media screen and (min-width:768px) {
-    .info {
-        width: 30%;
-    }
-
-    .info img {
-        width: 12em;
-        height: 12em;
-    }
-}
 
 .info img {
     width: 15.625em;
@@ -546,26 +286,6 @@ header label:hover {
     border-radius: 50%;
 }
 
-@media screen and (min-width:768px) {
-    .info img {
-        width: 12em;
-        height: 12em;
-    }
-}
-
-@media screen and (min-width:1280px) {
-    .info img {
-        width: 15em;
-        height: 15em;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .info img {
-        width: 18em;
-        height: 18em;
-    }
-}
 
 
 .info img:hover {
@@ -595,21 +315,6 @@ header label:hover {
 
 }
 
-@media screen and (min-width:768px) {
-    .texto-info p {
-        padding: 0 0.875em;
-        text-align: left;
-        line-height: 1.9;
-    }
-}
-
-@media screen and (min-width:1280px) {
-    .texto-info p {
-        padding: 0 0.875em;
-        text-align: center;
-        line-height: 2.2;
-    }
-}
 
 .whatsapp-btn {
     background-color: #25d366;
@@ -627,19 +332,6 @@ header label:hover {
     text-decoration: none !important;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .whatsapp-btn {
-        width: 2.8em;
-        height: 2.8em;
-        right: 1em;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .whatsapp-btn {
-        right: 1em;
-    }
-}
 
 
 .fab {
@@ -684,26 +376,6 @@ header label:hover {
     /*Agregamos un padding*/
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .container-footer {
-        flex-direction: column;
-        justify-content: center;
-        width: 85%;
-        /*cambiamos a 100%*/
-        margin: 0 auto;
-        /*para centrarlo en esa medida*/
-    }
-
-    .container-footer>div {
-        width: 100%
-            /*10em*/
-    }
-
-    .col-nav {
-        /*cambiamos a none para  que no aparezcan los iconos en formato cel*/
-        display: none;
-    }
-}
 
 
 
@@ -755,14 +427,6 @@ header label:hover {
     justify-content: space-around;
 }
 
-@media screen and (min-width:768px) and (max-width:1279px) {
-    .col-nav {
-        display: none;
-    }
-    .col-info{
-        width: 30%;
-    }
-}
 
 /*FIN ESTILOS FOOTER*/
 /*-------------------------------------------------------------------------*/
@@ -785,21 +449,11 @@ header label:hover {
     margin-top: 6.25em;
 }
 
-@media screen and (min-width:768px) and (max-width:1279px) {
-    .contenedor-nosotros {
-        width: 100%;
-    }
-}
 
 .contenido-nosotros {
     display: flex;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .contenido-nosotros {
-        flex-direction: column;
-    }
-}
 
 .nosotros-info {
     width: 30%;
@@ -813,15 +467,6 @@ header label:hover {
     justify-content: space-around;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .nosotros-info {
-        width: auto;
-        margin-left: 0;
-        margin-right: 0;
-        height: 20em;
-        margin-top: -5.5em;
-    }
-}
 
 .experiencia h2 {
     font-size: 2.5em;
@@ -840,6 +485,7 @@ header label:hover {
     opacity: 0.4;
     z-index: -1;
 }
+
 .nosotros-texto {
     width: 60%;
     font-family: 'Roboto', sans-serif;
@@ -848,48 +494,6 @@ header label:hover {
     line-height: 2;
 }
 
-@media screen and (min-width:768px) and (max-width:1279px) {
-    .contenido-nosotros {
-        display: flex;
-    }
-
-    .nosotros-info {
-        margin-top: -5.625em;
-        margin-right: -1.25em;
-        margin-left: 1.75em;
-    }
-
-    .experiencia h2,
-    .realizados h2 {
-        width: 4.25em;
-        height: 4.25em;
-    }
-
-    .nosotros-texto {
-        width: 54%;
-    }
-}
-@media screen and (min-width:1280px) and (max-width:1919px) {
-    .contenido-nosotros {
-        display: flex;
-    }
-
-    .nosotros-info {
-        margin-top: -5.625em;
-        margin-right: -1.25em;
-        margin-left: 1.75em;
-    }
-
-    .experiencia h2,
-    .realizados h2 {
-        width: 4.25em;
-        height: 4.25em;
-    }
-
-    .nosotros-texto {
-        width: 54%;
-    }
-}
 
 
 
@@ -908,29 +512,11 @@ header label:hover {
     letter-spacing: 0.0875em;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-
-    .realizados h2,
-    .experiencia h2 {
-        font-size: 2em;
-        width: 4em;
-        height: 4em;
-    }
-}
 
 .nosotros-texto h1 {
     font-size: 1.875em;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .nosotros-texto {
-        width: 90%;
-    }
-
-    .nosotros-texto h1 {
-        text-align: center;
-    }
-}
 
 .nosotros-texto span {
     font-weight: bold;
@@ -949,12 +535,6 @@ header label:hover {
     margin-bottom: 6.25em;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .contenedor-espe {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 /*INICIO LO QUE HACEMOS-------------*/
 .titulos {
@@ -964,12 +544,6 @@ header label:hover {
     margin-top: 5em;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .titulos {
-        margin-top: 2em;
-        margin-bottom: 0;
-    }
-}
 
 .titulos h4 {
     font-family: 'Roboto', sans-serif;
@@ -991,13 +565,6 @@ header label:hover {
     text-align: center;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .especializacion {
-        width: 21em;
-        text-align: center;
-        margin-bottom: 1.5em;
-    }
-}
 
 .especializacion img {
     width: 15.625em;
@@ -1014,12 +581,6 @@ header label:hover {
     margin-top: 2.5em;
 }
 
-@media screen and (min-width:768px) and (max-width:1279px) {
-    .especializacion img {
-        width: 13em;
-        height: 13em;
-    }
-}
 
 /*INICIO ESTILOS SECTION COMO LO HACEMOS------------*/
 
@@ -1050,72 +611,6 @@ header label:hover {
     padding: 0 1.875em 1.875em 8.125em;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-
-    /*@MEDIA SECCION COMO LO HACEMOS*/
-
-    .hacemos {
-        flex-direction: column;
-    }
-
-    .texto-hacemos {
-        width: 95%;
-        padding: 0 1em;
-    }
-    .texto-hacemos ul{
-        margin-bottom: 2em;
-    }
-
-    .como-hacemos {
-        width: 100%;
-        margin: 0 auto;
-
-    }
-
-    .hacemos img {
-        order: 2;
-        margin-left: 2.5em;
-        width: 18em;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:1279px) {
- 
-
-    .hacemos {
-        flex-direction: column;
-    }
-
-    .texto-hacemos {
-        width: 100%;
-        padding: 0 1em;
-    }
-
-    .texto-hacemos ul {
-        margin-bottom: 3em;
-    }
-
-    .como-hacemos {
-        width: 100%;
-        margin: 0 auto;
-
-    }
-
-    .hacemos img {
-        order: 2;
-        margin-left: 8.5em;
-        width: 30em;
-    }
-}
-
-
-
-@media screen and (min-width:1280px) and (max-width:1919px){
-    .texto-hacemos {
-        width: 55%;
-        padding: 0;
-    }
-}
 
 
 
@@ -1198,30 +693,6 @@ header label:hover {
 
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .contenedor-proyectos {
-        width: 90%;
-    }
-
-    .proyectos h1 {
-        text-align: center;
-    }
-}
-@media screen and (min-width:768px) and (max-width:1279px){
-    .contenedor-proyectos {
-        width: 100%;
-    }
-    .proyectos h1 {
-        text-align: center;
-    }
-    .proyectos p{
-        margin-left: 1.5em;
-        margin-right: 1em;
-    }
-    .imagenes-proyectos{
-        margin-left: 5.5em;
-    }
-}
 
 /*FIN ESTILOS PROYECTOS*/
 
@@ -1255,6 +726,7 @@ header label:hover {
 .noticia a {
     text-decoration: none;
 }
+
 .img-noticia {
     width: 100%;
 }
@@ -1286,19 +758,6 @@ header label:hover {
     letter-spacing: 0.1875em;
 }
 
-@media screen and (min-width:0px) and (max-width:575px) {
-    .contenedor-noticias {
-        width: 90%;
-        flex-direction: column;
-    }
-    .noticia{
-        width: 100%;
-
-    }
-
-    
-
-}
 
 /*FIN ESTILOS NOTICIAS*/
 
@@ -1345,6 +804,236 @@ header label:hover {
     margin-bottom: 5em;
 }
 
+
+/*@MEDIA PARA RESPONSIVE CELULARES*/
+/*ESTILOS PARA EL HEADER*/
+
+@media screen and (min-width:0px) and (max-width:575px) {
+    header {
+        box-sizing: content-box;
+    }
+
+    .header-contenedor {
+        display: block;
+        position: relative;
+        top: -860px;
+        left: -210px;
+    }
+
+    .header-logo {
+        position: absolute;
+        top: 4.375em;
+        left: 6.75em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-texto {
+        right: -4em;
+        width: 75%;
+    }
+
+    .header-texto p {
+        font-size: 1.5em;
+        text-align: center;
+        line-height: 1.4;
+        text-shadow: 0 0 0.2em rgb(252, 252, 252), 0 0 0.2em rgb(252, 252, 252),
+            0 0 0.2em rgb(252, 252, 252)
+    }
+
+    .header-texto h1 {
+        font-size: 1.95em;
+        text-align: left;
+        font-weight: bold !important;
+        margin-top: 2em;
+        color: white;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+
+    .header-texto p::before,
+    .header-texto p::after,
+    .header-texto h1::before,
+    .header-texto h1::after,
+    .header-logo::before,
+    .header-logo::after {
+        display: none;
+    }
+}
+
+/*ESTILOS PARA EL MENU*/
+@media screen and (min-width: 0px) and (max-width: 575px) {
+    .menu {
+        position: relative;
+        background: none;
+        transition: none;
+        transform: none;
+        right: -12.5em;
+        top: 3.5em;
+    }
+
+    .menu a {
+        height: 1em;
+        margin-top: -0.5em;
+        font-size: 1.4em;
+        border-bottom: none;
+    }
+
+    .menu a:hover {
+        background: inherit !important;
+    }
+
+    .redes {
+        display: none;
+    }
+}
+
+/*ESTILOS PARA EL MAIN*/
+@media screen and (min-width:0px) and (max-width:575px) {
+    .contenedor-info {
+        flex-direction: column;
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    main {
+        box-sizing: inherit !important;
+    }
+
+    .info {
+        width: 100%;
+    }
+}
+
+/*ESTILOS PARA EL WHATSAPP BOOTON*/
+@media screen and (min-width:0px) and (max-width:575px) {
+    .whatsapp-btn {
+        width: 2.8em;
+        height: 2.8em;
+        right: 1em;
+    }
+}
+
+/*ESTILOS PARA EL FOOTER*/
+@media screen and (min-width:0px) and (max-width:575px) {
+    .container-footer {
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        margin: 0 auto;
+        /*para centrarlo en esa medida*/
+    }
+
+    .container-footer>div {
+        width: 100%
+    }
+
+    .col-nav {
+        /*cambie a none para  que no aparezcan los iconos en formato cel*/
+        display: none;
+    }
+}
+
+/*ESTILOS NOSOTROS*/
+@media screen and (min-width:0px) and (max-width:575px) {
+    .contenido-nosotros {
+        flex-direction: column;
+    }
+
+    .nosotros-info {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        height: 20em;
+        margin-top: -5.5em;
+    }
+
+    .realizados h2,
+    .experiencia h2 {
+        font-size: 2em;
+        width: 4em;
+        height: 4em;
+    }
+
+    .nosotros-texto {
+        width: 90%;
+    }
+
+    .nosotros-texto h1 {
+        text-align: center;
+    }
+
+    .contenedor-espe {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*ESTILOS NOSOTROS LO QUE HACEMOS*/
+@media screen and (min-width:0px) and (max-width:575px) {
+    .titulos {
+        margin-top: 2em;
+        margin-bottom: 0;
+    }
+
+    .especializacion {
+        width: 21em;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+}
+
+/*ESTILOS NOSOTROS COMO LO HACEMOS*/
+@media screen and (min-width:0px) and (max-width:575px) {
+    .hacemos {
+        flex-direction: column;
+    }
+
+    .texto-hacemos {
+        width: 95%;
+        padding: 0 1em;
+    }
+
+    .texto-hacemos ul {
+        margin-bottom: 2em;
+    }
+
+    .como-hacemos {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hacemos img {
+        order: 2;
+        margin-left: 2.5em;
+        width: 18em;
+    }
+}
+
+/*ESTILOS PROYECTOS*/
+@media screen and (min-width:0px) and (max-width:575px) {
+    .contenedor-proyectos {
+        width: 90%;
+    }
+
+    .proyectos h1 {
+        text-align: center;
+    }
+}
+
+/*ESTILOS NOTICIAS*/
+@media screen and (min-width:0px) and (max-width:575px) {
+    .contenedor-noticias {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .noticia {
+        width: 100%;
+    }
+}
+
+/*ESTILOS FORMULARIO*/
 @media screen and (min-width:0px) and (max-width:575px) {
     .formulario {
         width: 90%;
@@ -1379,5 +1068,332 @@ header label:hover {
 
     .form-inputs {
         width: 20em;
+    }
+}
+
+/*@MEDIA PARA RESPONSIVE TABLETS*/
+/*ESTILOS PARA HEADER*/
+@media screen and (min-width: 768px) {
+    .header-texto {
+        right: -5em;
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-logo::after {
+        left: 24.25em;
+    }
+
+    .header-texto p::after {
+        right: 11em !important;
+        bottom: 25.5em !important;
+    }
+
+    .header-texto h1 {
+        font-size: 3.30em;
+    }
+
+    .header-texto h1::after {
+        right: 17.5em;
+        margin-top: 2.3em;
+    }
+
+}
+
+/*ESTILOS PARA EL MENU*/
+@media screen and (min-width: 768px) {
+    .menu {
+        width: 25%;
+        height: 30em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu a {
+        height: 1em;
+        padding: 0.5em 0.5em 0.5em 1em;
+        font-size: 1.5em;
+        position: relative;
+        top: 1em;
+
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1279px) {
+    .redes {
+        display: none;
+    }
+}
+
+/*ESTILOS PARA MAIN*/
+@media screen and (min-width:768px) {
+    .contenedor-info {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .info {
+        width: 30%;
+    }
+
+    .info img {
+        width: 12em;
+        height: 12em;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .texto-info p {
+        padding: 0 0.875em;
+        text-align: left;
+        line-height: 1.9;
+    }
+}
+
+/*ESTILOS WHATSAPP BOOTON*/
+@media screen and (min-width:768px) {
+    .whatsapp-btn {
+        right: 1em;
+    }
+}
+
+/*ESTILOS FOOTER*/
+@media screen and (min-width:768px) and (max-width:1279px) {
+    .col-nav {
+        display: none;
+    }
+
+    .col-info {
+        width: 30%;
+    }
+}
+
+/*ESTILOS NOSOTROS*/
+@media screen and (min-width:768px) and (max-width:1279px) {
+    .contenedor-nosotros {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1279px) {
+    .contenido-nosotros {
+        display: flex;
+    }
+
+    .nosotros-info {
+        margin-top: -5.625em;
+        margin-right: -1.25em;
+        margin-left: 1.75em;
+    }
+
+    .experiencia h2,
+    .realizados h2 {
+        width: 4.25em;
+        height: 4.25em;
+    }
+
+    .nosotros-texto {
+        width: 54%;
+    }
+}
+
+/*ESTILOS NOSOTROS LO QUE HACEMOS*/
+@media screen and (min-width:768px) and (max-width:1279px) {
+    .especializacion img {
+        width: 13em;
+        height: 13em;
+    }
+}
+
+/*ESTILOS NOSOTROS COMO LO HACEMOS*/
+@media screen and (min-width:768px) and (max-width:1279px) {
+
+
+    .hacemos {
+        flex-direction: column;
+    }
+
+    .texto-hacemos {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .texto-hacemos ul {
+        margin-bottom: 3em;
+    }
+
+    .como-hacemos {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .hacemos img {
+        order: 2;
+        margin-left: 8.5em;
+        width: 30em;
+    }
+}
+
+/*ESTILOS PROYECTOS*/
+@media screen and (min-width:768px) and (max-width:1279px) {
+    .contenedor-proyectos {
+        width: 100%;
+    }
+
+    .proyectos h1 {
+        text-align: center;
+    }
+
+    .proyectos p {
+        margin-left: 1.5em;
+        margin-right: 1em;
+    }
+
+    .imagenes-proyectos {
+        margin-left: 5.5em;
+    }
+}
+
+/*@MEDIA PARA RESPONSIVE LAPTOPS*/
+/*ESTILOS PARA HEADER*/
+@media screen and (min-width: 1280px) {
+    .header-texto {
+        right: -11em;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header-logo::after {
+        left: 47.6em;
+        bottom: -2em;
+    }
+
+    .header-texto p {
+        font-size: 1.75em;
+    }
+
+    .header-texto p::after {
+        right: 14.5em !important;
+        bottom: 17.8em !important;
+    }
+
+    .header-texto h1 {
+        font-size: 4em;
+    }
+
+    .header-texto h1::after {
+        right: 2.5em;
+        margin-top: 2.3em;
+    }
+}
+
+/*ESTILOS PARA EL MENU*/
+@media screen and (min-width: 1280px) {
+    .menu {
+        width: 18%;
+        height: 37em;
+    }
+}
+
+/*ESTILOS PARA EL MAIN*/
+@media screen and (min-width:1280px) {
+    .contenedor-info {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .info img {
+        width: 15em;
+        height: 15em;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .texto-info p {
+        padding: 0 0.875em;
+        text-align: center;
+        line-height: 2.2;
+    }
+}
+
+/*ESTILOS NOSOTROS*/
+@media screen and (min-width:1280px) and (max-width:1919px) {
+    .contenido-nosotros {
+        display: flex;
+    }
+
+    .nosotros-info {
+        margin-top: -5.625em;
+        margin-right: -1.25em;
+        margin-left: 1.75em;
+    }
+
+    .experiencia h2,
+    .realizados h2 {
+        width: 4.25em;
+        height: 4.25em;
+    }
+
+    .nosotros-texto {
+        width: 54%;
+    }
+}
+
+/*ESTILOS NOSOTROS COMO LO HACEMOS*/
+@media screen and (min-width:1280px) and (max-width:1919px) {
+    .texto-hacemos {
+        width: 55%;
+        padding: 0;
+    }
+}
+
+/*@MEDIA PARA RESPONSIVE PC'S*/
+/*ESTILOS HEADER*/
+@media screen and (min-width: 1920px) {
+    .header-texto {
+        top: -35em;
+        right: -11em;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .header-logo::after {
+        left: 73.6em;
+    }
+
+    .header-texto p::after {
+        right: 31.2em !important;
+    }
+
+    .header-texto h1::after {
+        right: 22.5em;
+    }
+}
+
+/*ESTILOS MENU*/
+@media screen and (min-width: 1920px) {
+    .menu {
+        width: 13%;
+        height: 36em;
+    }
+}
+
+/*ESTILOS MAIN*/
+@media screen and (min-width:1920px) {
+    .contenedor-info {
+        width: 82%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .info img {
+        width: 18em;
+        height: 18em;
     }
 }
