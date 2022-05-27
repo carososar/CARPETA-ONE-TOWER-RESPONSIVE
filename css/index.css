@@ -8,13 +8,11 @@ html {
     box-sizing: border-box;
 }
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
-
 
 .fondo {
     width: 100%;
@@ -25,8 +23,6 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(30%);
-
-
 }
 
 header {
@@ -38,9 +34,7 @@ header {
     margin-bottom: 4em;
 }
 
-
 .header-contenedor {
-    /* eliminamos la propiedad flex que no hacia nada */
     position: fixed;
     top: 0;
     padding: 3.125em;
@@ -48,13 +42,11 @@ header {
     height: 6.25em;
 }
 
-
 .header-logo {
     position: absolute;
     top: 4.375em;
     left: 3.75em;
 }
-
 
 .header-logo::before {
     content: "<header>";
@@ -86,7 +78,6 @@ header {
     right: -19em;
 }
 
-
 .header-texto h1 {
     /*float: left; /*le indico al titulo que flote a la izq*/
     margin-top: 1.5625em;
@@ -97,7 +88,6 @@ header {
     font-weight: 700 !important;
 }
 
-
 .header-texto h1::before {
     content: "<h1>";
     font-family: 'La Belle Aurore', cursive;
@@ -105,9 +95,7 @@ header {
     font-size: 0.4em;
     position: absolute;
     margin-top: -0.5em;
-    /**/
     left: -1.7em;
-    /**/
     text-transform: lowercase;
 }
 
@@ -118,12 +106,9 @@ header {
     font-size: 0.4em;
     position: absolute;
     margin-top: 2em;
-    /**/
     right: 29em;
-    /**/
     text-transform: lowercase;
 }
-
 
 .header-texto p {
     color: rgb(7, 7, 7);
@@ -142,9 +127,7 @@ header {
     font-size: 1.1em;
     position: absolute;
     margin-top: -1rem;
-    /**/
     left: -2rem;
-    /**/
     text-transform: lowercase;
 }
 
@@ -155,9 +138,7 @@ header {
     font-size: 1.1em;
     position: absolute;
     right: 50em;
-    /**/
     bottom: 17em;
-    /**/
     text-transform: lowercase;
 }
 
@@ -263,8 +244,6 @@ header label:hover {
 /*FIN ESTILOS MENU*/
 /*INICIO ESTILOS MAIN*/
 
-
-
 .contenedor-info {
     width: 87.5em;
     margin: 0 auto;
@@ -272,21 +251,17 @@ header label:hover {
     justify-content: space-around;
 }
 
-
 .info {
     width: calc(33.3% - 1em);
     text-align: center;
     margin-bottom: 3.125em;
 }
 
-
 .info img {
     width: 15.625em;
     height: 15.625em;
     border-radius: 50%;
 }
-
-
 
 .info img:hover {
     transform: scale(1.1);
@@ -312,9 +287,7 @@ header label:hover {
     line-height: 2.3;
     font-weight: lighter;
     padding: 0 1.875em;
-
 }
-
 
 .whatsapp-btn {
     background-color: #25d366;
@@ -333,12 +306,10 @@ header label:hover {
 }
 
 
-
 .fab {
     font-family: Font Awesome\ 5 Brands;
     font-weight: 400;
     font-size: 1.875em;
-
 }
 
 .text-white {
@@ -357,7 +328,6 @@ header label:hover {
     /* 28.125em; */
     background-color: rgb(126, 124, 124);
     text-align: center;
-
 }
 
 .container-footer {
@@ -375,9 +345,6 @@ header label:hover {
     padding-bottom: 4em;
     /*Agregamos un padding*/
 }
-
-
-
 
 .container-footer a {
     text-decoration: none;
@@ -449,11 +416,9 @@ header label:hover {
     margin-top: 6.25em;
 }
 
-
 .contenido-nosotros {
     display: flex;
 }
-
 
 .nosotros-info {
     width: 30%;
@@ -466,7 +431,6 @@ header label:hover {
     flex-direction: column;
     justify-content: space-around;
 }
-
 
 .experiencia h2 {
     font-size: 2.5em;
@@ -494,16 +458,12 @@ header label:hover {
     line-height: 2;
 }
 
-
-
-
 .realizados h2 {
     position: relative;
     margin-bottom: -2.5em;
     font-size: 2.5em;
     font-weight: bold;
 }
-
 
 .experiencia h4,
 .realizados h4 {
@@ -512,11 +472,9 @@ header label:hover {
     letter-spacing: 0.0875em;
 }
 
-
 .nosotros-texto h1 {
     font-size: 1.875em;
 }
-
 
 .nosotros-texto span {
     font-weight: bold;
@@ -544,7 +502,6 @@ header label:hover {
     margin-top: 5em;
 }
 
-
 .titulos h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
@@ -564,7 +521,6 @@ header label:hover {
     width: 28.125em;
     text-align: center;
 }
-
 
 .especializacion img {
     width: 15.625em;
@@ -587,14 +543,12 @@ header label:hover {
 .como-hacemos {
     background-color: #f8f8f8;
     padding: 1.25em 0 2.5em 0;
-
 }
 
 .contenido-como-hacemos {
     width: 100%;
     margin: 0 auto;
 }
-
 
 .hacemos {
     display: flex;
@@ -610,9 +564,6 @@ header label:hover {
     width: 55%;
     padding: 0 1.875em 1.875em 8.125em;
 }
-
-
-
 
 .texto-hacemos p,
 .texto-hacemos li {
@@ -690,7 +641,6 @@ header label:hover {
 .foto-proyectos img:hover {
     transition: all 0.8s ease-in-out;
     transform: scale(1.1);
-
 }
 
 
@@ -749,7 +699,6 @@ header label:hover {
     font-size: 1em;
     margin-bottom: 0.9375em;
     line-height: 1.5;
-
 }
 
 .texto-blog span {
@@ -791,7 +740,6 @@ header label:hover {
     height: 15.625em;
     align-items: center;
     width: 100%;
-
 }
 
 .form-inputs {
@@ -1098,7 +1046,6 @@ header label:hover {
         right: 17.5em;
         margin-top: 2.3em;
     }
-
 }
 
 /*ESTILOS PARA EL MENU*/
@@ -1116,7 +1063,6 @@ header label:hover {
         font-size: 1.5em;
         position: relative;
         top: 1em;
-
     }
 }
 
@@ -1209,8 +1155,6 @@ header label:hover {
 
 /*ESTILOS NOSOTROS COMO LO HACEMOS*/
 @media screen and (min-width:768px) and (max-width:1279px) {
-
-
     .hacemos {
         flex-direction: column;
     }
@@ -1227,7 +1171,6 @@ header label:hover {
     .como-hacemos {
         width: 100%;
         margin: 0 auto;
-
     }
 
     .hacemos img {
